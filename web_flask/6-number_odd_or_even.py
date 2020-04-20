@@ -30,12 +30,6 @@ def python_python(text="is cool"):
 
 
 @app.route('/number/<int:n>', strict_slashes=False)
-def python_something(n):
-    """function that print <integer> is a number"""
-    return "{} is a number".format(n)
-
-
-@app.route('/number/<int:n>', strict_slashes=False)
 def n_is_number(n):
     """function that print <integer> is a number"""
     return "{} is a number".format(n)

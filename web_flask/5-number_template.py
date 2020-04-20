@@ -24,15 +24,9 @@ def c_something(text):
 
 @app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
-def python_python(text="is cool"):
+def python_something(text="is cool"):
     """function that print python <something>"""
     return "Python {}".format(text.replace("_", " "))
-
-
-@app.route('/number/<int:n>', strict_slashes=False)
-def python_something(n):
-    """function that print <integer> is a number"""
-    return "{} is a number".format(n)
 
 
 @app.route('/number/<int:n>', strict_slashes=False)
